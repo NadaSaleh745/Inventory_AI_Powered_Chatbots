@@ -9,4 +9,4 @@ class AgentState(TypedDict):
     sql_result: Optional[Union[List[dict], str]]
     error: Optional[str]
     intent: str
-    revision_count: int
+    # revision_count: int

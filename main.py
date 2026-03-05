@@ -13,14 +13,6 @@ config = {
 }
 
 
-def print_stream(stream):
-    for s in stream:
-        message = s["message"][-1]
-        if isinstance(message, tuple):
-            print(message)
-        else:
-            message.pretty_print()
-
 def main():
     print("Hello, I'm your assistant! How can I help you today. (Type 'exit/quit' to quit.)\n")
     while True:
