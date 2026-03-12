@@ -31,7 +31,6 @@ def main():
             "sql_result": None,
             "error": None,
             "intent": None,
-            "revision_count": 0
         }
 
         result = app.invoke(state, config=config)
