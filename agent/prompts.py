@@ -18,9 +18,7 @@ def get_schema_string(db_path: str) -> str:
     schema = "\n\n".join(table[0] for table in tables if table[0] is not None)
     return schema
 
-# Resolve the SQLite DB path relative to the project root
-# Project structure: <root>/inventory_chatbot_langgraph/agent/prompts.py
-# The DB file lives at: <root>/inventory_chatbot.db
+
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DB_PATH = PROJECT_ROOT / "inventory_chatbot.db"
 SCHEMA = get_schema_string(str(DB_PATH))

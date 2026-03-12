@@ -84,7 +84,7 @@ def execute_cypher(state: AgentState):
 
 
 def synthesize_node(state: AgentState):
-    """Synthesizes the SQL query based on the user's question."""
+    """Synthesizes the cypher query based on the user's question."""
     cypher_result = state['cypher_result']
     system_prompt = SystemMessage(content=SYNTHESIZER_PROMPT)
     human_prompt = HumanMessage(content=cypher_result)

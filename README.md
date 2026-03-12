@@ -62,3 +62,61 @@ Then the graph was compiled.
 The main function contains the code of the loop to run the bot and print the messages between the user and the bot.
 
 Once the program is run, the user can type the input and get the response until they type **"exit"**.
+
+## NEO4J Knowledge Graph Agent
+
+## State
+
+Contains the following:
+
+- **message**: message history between the bot and the user  
+- **question**: the question asked by the user or the input, can be either chitchat or a question about SQL query  
+- **intent**: the intent of the user's message 
+- **cypher**: generated cypher code
+- **cypher_result**: the result retrieved by the cypher query
+- **error**: if the LLM fails to generate a SQL query  
+
+---
+
+## Nodes
+
+For the nodes, there are **seven**:
+
+### 1. intent_node
+Given the **INTENT_PROMPT** and the human message, it will determine the intent as **"add"**, **"update"**, **"inquire"**, **"delete"**.
+
+### 2. execute_cypher
+Executes Cypher query using LlamaIndex Neo4j Graph Store
+
+### 3. synthesize_node
+Synthesizes the cypher query based on the user's question.
+
+### 4. add_node
+Adds a new node to the graph
+
+### 5. update_node
+Updates an existing node in the graph
+
+### 6. inquire_node
+Inquires about a node in the graph
+
+### 7. delete_node
+Deletes a node from the graph
+
+---
+
+## Graph Structure
+
+For the graph itself, the nodes were connected like this:
+
+<img src="KG_neo4j/kg_graph.png" style="display:block; margin:auto;">
+
+Then the graph was compiled.
+
+
+
+## run_agent script
+
+The main function contains the code of the loop to run the bot and print the messages between the user and the bot.
+
+Once the program is run, the user can type the input and get the response until they type **"exit"**.

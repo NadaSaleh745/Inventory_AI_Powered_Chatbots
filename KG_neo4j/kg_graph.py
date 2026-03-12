@@ -7,7 +7,7 @@ def intent_router(state: AgentState):
     if state["intent"] == "ADD":
         return "add"
     elif state["intent"] == "INQUIRE":
-        return "delete"
+        return "inquire"
     elif state["intent"] == "UPDATE":
         return "update"
     else:
