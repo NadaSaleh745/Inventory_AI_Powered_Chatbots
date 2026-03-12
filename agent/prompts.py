@@ -1,4 +1,5 @@
 import sqlite3
+from pathlib import Path
 
 def get_schema_string(db_path: str) -> str:
     """Connects to the DB and returns the CREATE TABLE statements."""
@@ -17,7 +18,12 @@ def get_schema_string(db_path: str) -> str:
     schema = "\n\n".join(table[0] for table in tables if table[0] is not None)
     return schema
 
-SCHEMA = get_schema_string("/inventory_chatbot.db")
+# Resolve the SQLite DB path relative to the project root
+# Project structure: <root>/inventory_chatbot_langgraph/agent/prompts.py
+# The DB file lives at: <root>/inventory_chatbot.db
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DB_PATH = PROJECT_ROOT / "inventory_chatbot.db"
+SCHEMA = get_schema_string(str(DB_PATH))
 
 SYSTEM_PROMPT = ("You're an expert SQL assistant. Given a question, generate a SQL query that can answer the question. "
                  "Generate only valid SQL queries."
@@ -28,7 +34,7 @@ SYSTEM_PROMPT = ("You're an expert SQL assistant. Given a question, generate a S
                  "Do not alter the tables or columns, do not drop any too."
                  f"Here is the database schema:{SCHEMA}"
                  "Use ONLY the tables and columns defined above."
-                 "Pay attention to: Summing line items requires multiplying Quantity * UnitPrice from PurchaseOrderLines. Join PurchaseOrders on POId to get VendorId. Only return the final aggregate requested by the user, do not group unless explicitly asked. Do NOT guess columns from table names; use actual schema.")
+                 "Pay attention to: Summing line items requires multiplying Quantity * UnitPrice from PurchaseOrderLines. Join PurchaseOrders on POId to get VendorId. Only return the final aggregate requested by the user, do not group unless explicitly asked. Do NOT guess columns from table names, use actual schema.")
 
 REPLAN_PROMPT = "You're an expert SQL assistant. Given the error message, replan the SQL query until it works."
 

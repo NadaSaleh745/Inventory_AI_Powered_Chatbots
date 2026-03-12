@@ -1,5 +1,5 @@
 import operator
-from typing import TypedDict, Annotated, List
+from typing import TypedDict, Annotated, List, Optional
 from langchain_core.messages import BaseMessage
 
 
@@ -8,4 +8,5 @@ class AgentState(TypedDict):
     question: str
     intent: str
     cypher: str
-    answer: str
+    cypher_result: str
+    error: Optional[str]
