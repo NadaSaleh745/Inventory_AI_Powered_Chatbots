@@ -1,0 +1,744 @@
+{
+  "customers": [
+    {
+      "customerId": 1,
+      "customerCode": "CUST-ALPHA",
+      "customerName": "Alpha Corp",
+      "email": "ap@alpha.test",
+      "phone": "+1-646-111-1111",
+      "billingAddress1": "10 Alpha Rd",
+      "billingCity": "New York",
+      "billingCountry": "USA",
+      "isActive": 1
+    },
+    {
+      "customerId": 2,
+      "customerCode": "CUST-BETA",
+      "customerName": "Beta LLC",
+      "email": "ap@beta.test",
+      "phone": "+1-628-222-2222",
+      "billingAddress1": "20 Beta Ave",
+      "billingCity": "San Francisco",
+      "billingCountry": "USA",
+      "isActive": 1
+    },
+    {
+      "customerId": 3,
+      "customerCode": "CUST-GAMMA",
+      "customerName": "Gamma Industries",
+      "email": "ap@gamma.test",
+      "phone": "+44-20-1234-5678",
+      "billingAddress1": "30 Gamma St",
+      "billingCity": "London",
+      "billingCountry": "UK",
+      "isActive": 1
+    },
+    {
+      "customerId": 4,
+      "customerCode": "CUST-DELTA",
+      "customerName": "Delta GmbH",
+      "email": "ap@delta.test",
+      "phone": "+49-30-2345-6789",
+      "billingAddress1": "40 Delta Platz",
+      "billingCity": "Berlin",
+      "billingCountry": "Germany",
+      "isActive": 1
+    },
+    {
+      "customerId": 5,
+      "customerCode": "CUST-EPS",
+      "customerName": "Epsilon KK",
+      "email": "ap@epsilon.test",
+      "phone": "+81-3-4567-8901",
+      "billingAddress1": "50 Epsilon Dori",
+      "billingCity": "Tokyo",
+      "billingCountry": "Japan",
+      "isActive": 1
+    },
+    {
+      "customerId": 6,
+      "customerCode": "CUST-OMEGA",
+      "customerName": "Omega Retail",
+      "email": "ap@omegaretail.test",
+      "phone": "+1-212-555-0100",
+      "billingAddress1": "60 Omega Rd",
+      "billingCity": "New York",
+      "billingCountry": "USA",
+      "isActive": 1
+    },
+    {
+      "customerId": 7,
+      "customerCode": "CUST-SIGMA",
+      "customerName": "Sigma Stores",
+      "email": "ap@sigma.test",
+      "phone": "+1-415-555-0101",
+      "billingAddress1": "70 Sigma Blvd",
+      "billingCity": "San Francisco",
+      "billingCountry": "USA",
+      "isActive": 1
+    },
+    {
+      "customerId": 8,
+      "customerCode": "CUST-THETA",
+      "customerName": "Theta BV",
+      "email": "ap@theta.test",
+      "phone": "+31-20-555-0102",
+      "billingAddress1": "80 Theta Straat",
+      "billingCity": "Amsterdam",
+      "billingCountry": "Netherlands",
+      "isActive": 1
+    },
+    {
+      "customerId": 9,
+      "customerCode": "CUST-LAMBDA",
+      "customerName": "Lambda SA",
+      "email": "ap@lambda.test",
+      "phone": "+33-1-555-0103",
+      "billingAddress1": "90 Lambda Rue",
+      "billingCity": "Paris",
+      "billingCountry": "France",
+      "isActive": 1
+    },
+    {
+      "customerId": 10,
+      "customerCode": "CUST-PI",
+      "customerName": "Pi SpA",
+      "email": "ap@pi.test",
+      "phone": "+39-06-555-0104",
+      "billingAddress1": "100 Pi Via",
+      "billingCity": "Rome",
+      "billingCountry": "Italy",
+      "isActive": 1
+    }
+  ],
+  "vendors": [
+    {
+      "vendorId": 1,
+      "vendorCode": "VEND-ACME",
+      "vendorName": "ACME Supplies",
+      "email": "sales@acme.test",
+      "phone": "+1-212-000-0000",
+      "addressLine1": "100 Main St",
+      "city": "New York",
+      "country": "USA",
+      "isActive": 1
+    },
+    {
+      "vendorId": 2,
+      "vendorCode": "VEND-GLOB",
+      "vendorName": "Global Industrial",
+      "email": "hello@glob.test",
+      "phone": "+1-415-000-0000",
+      "addressLine1": "200 Market St",
+      "city": "San Francisco",
+      "country": "USA",
+      "isActive": 1
+    },
+    {
+      "vendorId": 3,
+      "vendorCode": "VEND-OMEG",
+      "vendorName": "Omega Tools",
+      "email": "contact@omega.test",
+      "phone": "+44-20-0000-0001",
+      "addressLine1": "10 Fleet St",
+      "city": "London",
+      "country": "UK",
+      "isActive": 1
+    },
+    {
+      "vendorId": 4,
+      "vendorCode": "VEND-BER1",
+      "vendorName": "Berliner Technik",
+      "email": "verkauf@ber1.test",
+      "phone": "+49-30-0000-0002",
+      "addressLine1": "Unter den Linden 5",
+      "city": "Berlin",
+      "country": "Germany",
+      "isActive": 1
+    },
+    {
+      "vendorId": 5,
+      "vendorCode": "VEND-TOK1",
+      "vendorName": "Tokyo Parts Co.",
+      "email": "sales@tok1.test",
+      "phone": "+81-3-0000-0003",
+      "addressLine1": "2-2-2 Shibuya",
+      "city": "Tokyo",
+      "country": "Japan",
+      "isActive": 1
+    },
+    {
+      "vendorId": 6,
+      "vendorCode": "VEND-NOVA",
+      "vendorName": "Nova Components",
+      "email": "hi@nova.test",
+      "phone": "+1-917-000-0004",
+      "addressLine1": "5 Broadway",
+      "city": "New York",
+      "country": "USA",
+      "isActive": 1
+    },
+    {
+      "vendorId": 7,
+      "vendorCode": "VEND-PACF",
+      "vendorName": "Pacific Gear",
+      "email": "sales@pacific.test",
+      "phone": "+1-650-000-0005",
+      "addressLine1": "600 Embarcadero",
+      "city": "San Francisco",
+      "country": "USA",
+      "isActive": 1
+    }
+  ],
+  "sites": [
+    {
+      "siteId": 1,
+      "siteCode": "NYC",
+      "siteName": "New York HQ",
+      "addressLine1": "350 5th Ave",
+      "city": "New York",
+      "country": "USA",
+      "timeZone": "America/New_York",
+      "isActive": 1
+    },
+    {
+      "siteId": 2,
+      "siteCode": "SFO",
+      "siteName": "San Francisco Branch",
+      "addressLine1": "1 Market St",
+      "city": "San Francisco",
+      "country": "USA",
+      "timeZone": "America/Los_Angeles",
+      "isActive": 1
+    },
+    {
+      "siteId": 3,
+      "siteCode": "LON",
+      "siteName": "London Office",
+      "addressLine1": "221B Baker St",
+      "city": "London",
+      "country": "UK",
+      "timeZone": "Europe/London",
+      "isActive": 1
+    },
+    {
+      "siteId": 4,
+      "siteCode": "BER",
+      "siteName": "Berlin Hub",
+      "addressLine1": "Pariser Platz",
+      "city": "Berlin",
+      "country": "Germany",
+      "timeZone": "Europe/Berlin",
+      "isActive": 1
+    },
+    {
+      "siteId": 5,
+      "siteCode": "TOK",
+      "siteName": "Tokyo DC",
+      "addressLine1": "1-1 Chiyoda",
+      "city": "Tokyo",
+      "country": "Japan",
+      "timeZone": "Asia/Tokyo",
+      "isActive": 1
+    }
+  ],
+  "locations": [
+    {
+      "locationId": 1,
+      "siteId": 1,
+      "locationCode": "NYC-WH",
+      "locationName": "NYC Warehouse",
+      "parentLocationId": null,
+      "isActive": 1
+    },
+    {
+      "locationId": 2,
+      "siteId": 1,
+      "locationCode": "NYC-WH-A1",
+      "locationName": "NYC Aisle A1",
+      "parentLocationId": 1,
+      "isActive": 1
+    },
+    {
+      "locationId": 3,
+      "siteId": 1,
+      "locationCode": "NYC-WH-B1",
+      "locationName": "NYC Aisle B1",
+      "parentLocationId": 1,
+      "isActive": 1
+    },
+    {
+      "locationId": 4,
+      "siteId": 2,
+      "locationCode": "SFO-WH",
+      "locationName": "SFO Warehouse",
+      "parentLocationId": null,
+      "isActive": 1
+    },
+    {
+      "locationId": 5,
+      "siteId": 2,
+      "locationCode": "SFO-WH-A1",
+      "locationName": "SFO Aisle A1",
+      "parentLocationId": 4,
+      "isActive": 1
+    },
+    {
+      "locationId": 6,
+      "siteId": 2,
+      "locationCode": "SFO-WH-B1",
+      "locationName": "SFO Aisle B1",
+      "parentLocationId": 4,
+      "isActive": 1
+    },
+    {
+      "locationId": 7,
+      "siteId": 3,
+      "locationCode": "LON-WH",
+      "locationName": "LON Warehouse",
+      "parentLocationId": null,
+      "isActive": 1
+    },
+    {
+      "locationId": 8,
+      "siteId": 3,
+      "locationCode": "LON-WH-A1",
+      "locationName": "LON Aisle A1",
+      "parentLocationId": 7,
+      "isActive": 1
+    },
+    {
+      "locationId": 9,
+      "siteId": 3,
+      "locationCode": "LON-WH-B1",
+      "locationName": "LON Aisle B1",
+      "parentLocationId": 7,
+      "isActive": 1
+    },
+    {
+      "locationId": 10,
+      "siteId": 4,
+      "locationCode": "BER-WH",
+      "locationName": "BER Warehouse",
+      "parentLocationId": null,
+      "isActive": 1
+    },
+    {
+      "locationId": 11,
+      "siteId": 4,
+      "locationCode": "BER-WH-A1",
+      "locationName": "BER Aisle A1",
+      "parentLocationId": 10,
+      "isActive": 1
+    },
+    {
+      "locationId": 12,
+      "siteId": 4,
+      "locationCode": "BER-WH-B1",
+      "locationName": "BER Aisle B1",
+      "parentLocationId": 10,
+      "isActive": 1
+    },
+    {
+      "locationId": 13,
+      "siteId": 5,
+      "locationCode": "TOK-WH",
+      "locationName": "TOK Warehouse",
+      "parentLocationId": null,
+      "isActive": 1
+    },
+    {
+      "locationId": 14,
+      "siteId": 5,
+      "locationCode": "TOK-WH-A1",
+      "locationName": "TOK Aisle A1",
+      "parentLocationId": 13,
+      "isActive": 1
+    },
+    {
+      "locationId": 15,
+      "siteId": 5,
+      "locationCode": "TOK-WH-B1",
+      "locationName": "TOK Aisle B1",
+      "parentLocationId": 13,
+      "isActive": 1
+    }
+  ],
+  "items": [
+    {
+      "itemId": 1,
+      "itemCode": "ITM-100",
+      "itemName": "Widget A",
+      "category": "Widgets",
+      "unitOfMeasure": "EA",
+      "isActive": 1
+    },
+    {
+      "itemId": 2,
+      "itemCode": "ITM-200",
+      "itemName": "Gadget B",
+      "category": "Gadgets",
+      "unitOfMeasure": "EA",
+      "isActive": 1
+    },
+    {
+      "itemId": 3,
+      "itemCode": "ITM-300",
+      "itemName": "Spare Part C",
+      "category": "Parts",
+      "unitOfMeasure": "EA",
+      "isActive": 1
+    },
+    {
+      "itemId": 4,
+      "itemCode": "ITM-400",
+      "itemName": "Widget Pro",
+      "category": "Widgets",
+      "unitOfMeasure": "EA",
+      "isActive": 1
+    },
+    {
+      "itemId": 5,
+      "itemCode": "ITM-401",
+      "itemName": "Widget Mini",
+      "category": "Widgets",
+      "unitOfMeasure": "EA",
+      "isActive": 1
+    },
+    {
+      "itemId": 6,
+      "itemCode": "ITM-402",
+      "itemName": "Widget Ultra",
+      "category": "Widgets",
+      "unitOfMeasure": "EA",
+      "isActive": 1
+    },
+    {
+      "itemId": 7,
+      "itemCode": "ITM-410",
+      "itemName": "Gadget Lite",
+      "category": "Gadgets",
+      "unitOfMeasure": "EA",
+      "isActive": 1
+    },
+    {
+      "itemId": 8,
+      "itemCode": "ITM-411",
+      "itemName": "Gadget Max",
+      "category": "Gadgets",
+      "unitOfMeasure": "EA",
+      "isActive": 1
+    },
+    {
+      "itemId": 9,
+      "itemCode": "ITM-412",
+      "itemName": "Gadget Plus",
+      "category": "Gadgets",
+      "unitOfMeasure": "EA",
+      "isActive": 1
+    },
+    {
+      "itemId": 10,
+      "itemCode": "ITM-420",
+      "itemName": "Part D",
+      "category": "Parts",
+      "unitOfMeasure": "EA",
+      "isActive": 1
+    },
+    {
+      "itemId": 11,
+      "itemCode": "ITM-421",
+      "itemName": "Part E",
+      "category": "Parts",
+      "unitOfMeasure": "EA",
+      "isActive": 1
+    },
+    {
+      "itemId": 12,
+      "itemCode": "ITM-422",
+      "itemName": "Part F",
+      "category": "Parts",
+      "unitOfMeasure": "EA",
+      "isActive": 1
+    },
+    {
+      "itemId": 13,
+      "itemCode": "ITM-430",
+      "itemName": "Component X",
+      "category": "Components",
+      "unitOfMeasure": "EA",
+      "isActive": 1
+    },
+    {
+      "itemId": 14,
+      "itemCode": "ITM-431",
+      "itemName": "Component Y",
+      "category": "Components",
+      "unitOfMeasure": "EA",
+      "isActive": 1
+    },
+    {
+      "itemId": 15,
+      "itemCode": "ITM-432",
+      "itemName": "Component Z",
+      "category": "Components",
+      "unitOfMeasure": "EA",
+      "isActive": 1
+    },
+    {
+      "itemId": 16,
+      "itemCode": "ITM-440",
+      "itemName": "Consumable A",
+      "category": "Consumables",
+      "unitOfMeasure": "BX",
+      "isActive": 1
+    },
+    {
+      "itemId": 17,
+      "itemCode": "ITM-441",
+      "itemName": "Consumable B",
+      "category": "Consumables",
+      "unitOfMeasure": "BX",
+      "isActive": 1
+    },
+    {
+      "itemId": 18,
+      "itemCode": "ITM-442",
+      "itemName": "Consumable C",
+      "category": "Consumables",
+      "unitOfMeasure": "BX",
+      "isActive": 1
+    },
+    {
+      "itemId": 19,
+      "itemCode": "ITM-450",
+      "itemName": "Spare Kit 1",
+      "category": "Kits",
+      "unitOfMeasure": "KT",
+      "isActive": 1
+    },
+    {
+      "itemId": 20,
+      "itemCode": "ITM-451",
+      "itemName": "Spare Kit 2",
+      "category": "Kits",
+      "unitOfMeasure": "KT",
+      "isActive": 1
+    }
+  ],
+  "assets": [
+    {
+      "assetId": 1,
+      "assetTag": "AST-0001",
+      "assetName": "Forklift 1",
+      "siteId": 1,
+      "locationId": 2,
+      "serialNumber": "SN-FL-001",
+      "category": "Vehicle",
+      "status": "Active",
+      "cost": 12500.00,
+      "purchaseDate": "2024-05-01",
+      "vendorId": 1
+    },
+    {
+      "assetId": 2,
+      "assetTag": "AST-0002",
+      "assetName": "Conveyor A",
+      "siteId": 2,
+      "locationId": 6,
+      "serialNumber": "SN-CNV-101",
+      "category": "Equipment",
+      "status": "Active",
+      "cost": 8500.00,
+      "purchaseDate": "2024-06-15",
+      "vendorId": 2
+    },
+    {
+      "assetId": 3,
+      "assetTag": "AST-0003",
+      "assetName": "Pallet Jack",
+      "siteId": 1,
+      "locationId": 1,
+      "serialNumber": "SN-PJ-900",
+      "category": "Tool",
+      "status": "Maintenance",
+      "cost": 600.00,
+      "purchaseDate": "2024-07-20",
+      "vendorId": 1
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "poId": 1,
+      "poNumber": "PO-10001",
+      "vendorId": 1,
+      "poDate": "2024-05-01",
+      "status": "Open",
+      "siteId": 1
+    },
+    {
+      "poId": 2,
+      "poNumber": "PO-10002",
+      "vendorId": 2,
+      "poDate": "2024-06-10",
+      "status": "Closed",
+      "siteId": 2
+    }
+  ],
+  "purchaseOrderLines": [
+    {
+      "poLineId": 1,
+      "poId": 1,
+      "lineNumber": 1,
+      "itemId": 1,
+      "itemCode": "ITM-100",
+      "description": "Widget A bulk",
+      "quantity": 100,
+      "unitPrice": 25.50
+    },
+    {
+      "poLineId": 2,
+      "poId": 1,
+      "lineNumber": 2,
+      "itemId": 3,
+      "itemCode": "ITM-300",
+      "description": "Spare Part C",
+      "quantity": 50,
+      "unitPrice": 5.75
+    },
+    {
+      "poLineId": 3,
+      "poId": 2,
+      "lineNumber": 1,
+      "itemId": 2,
+      "itemCode": "ITM-200",
+      "description": "Gadget B",
+      "quantity": 20,
+      "unitPrice": 99.99
+    }
+  ],
+  "salesOrders": [
+    {
+      "soId": 1,
+      "soNumber": "SO-50001",
+      "customerId": 1,
+      "soDate": "2024-07-01",
+      "status": "Open",
+      "siteId": 1
+    },
+    {
+      "soId": 2,
+      "soNumber": "SO-50002",
+      "customerId": 2,
+      "soDate": "2024-07-15",
+      "status": "Open",
+      "siteId": 2
+    }
+  ],
+  "salesOrderLines": [
+    {
+      "soLineId": 1,
+      "soId": 1,
+      "lineNumber": 1,
+      "itemId": 1,
+      "itemCode": "ITM-100",
+      "description": "Widget A",
+      "quantity": 10,
+      "unitPrice": 45.00
+    },
+    {
+      "soLineId": 2,
+      "soId": 1,
+      "lineNumber": 2,
+      "itemId": 3,
+      "itemCode": "ITM-300",
+      "description": "Spare Part C",
+      "quantity": 5,
+      "unitPrice": 9.50
+    },
+    {
+      "soLineId": 3,
+      "soId": 2,
+      "lineNumber": 1,
+      "itemId": 2,
+      "itemCode": "ITM-200",
+      "description": "Gadget B",
+      "quantity": 3,
+      "unitPrice": 149.99
+    }
+  ],
+  "bills": [
+    {
+      "billId": 1,
+      "vendorId": 1,
+      "billNumber": "BILL-1001",
+      "billDate": "2024-05-05",
+      "dueDate": "2024-06-05",
+      "totalAmount": 12500.00,
+      "currency": "USD",
+      "status": "Open"
+    },
+    {
+      "billId": 2,
+      "vendorId": 2,
+      "billNumber": "BILL-2001",
+      "billDate": "2024-06-20",
+      "dueDate": "2024-07-20",
+      "totalAmount": 8500.00,
+      "currency": "USD",
+      "status": "Open"
+    }
+  ],
+   "assetTransactions": [
+    {
+      "assetTxnId": 1,
+      "assetId": 1,
+      "fromLocationId": null,
+      "toLocationId": 2,
+      "txnType": "Receive",
+      "quantity": 1,
+      "txnDate": "2024-05-01",
+      "note": "Initial receipt of Forklift 1"
+    },
+    {
+      "assetTxnId": 2,
+      "assetId": 2,
+      "fromLocationId": null,
+      "toLocationId": 6,
+      "txnType": "Receive",
+      "quantity": 1,
+      "txnDate": "2024-06-15",
+      "note": "Initial receipt of Conveyor A"
+    },
+    {
+      "assetTxnId": 3,
+      "assetId": 3,
+      "fromLocationId": null,
+      "toLocationId": 1,
+      "txnType": "Receive",
+      "quantity": 1,
+      "txnDate": "2024-07-20",
+      "note": "Initial receipt of Pallet Jack"
+    },
+    {
+      "assetTxnId": 4,
+      "assetId": 1,
+      "fromLocationId": 2,
+      "toLocationId": 3,
+      "txnType": "Move",
+      "quantity": 1,
+      "txnDate": "2024-08-01",
+      "note": "Moved forklift to aisle B1"
+    },
+    {
+      "assetTxnId": 5,
+      "assetId": 3,
+      "fromLocationId": 1,
+      "toLocationId": 2,
+      "txnType": "Repair",
+      "quantity": 1,
+      "txnDate": "2024-08-15",
+      "note": "Sent for maintenance"
+    }
+  ]
+}

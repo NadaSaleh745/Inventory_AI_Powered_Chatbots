@@ -49,10 +49,18 @@ INTENT_PROMPT = ("Classify the intent of user input as one of the following:"
                  "ONLY return the label, 'ADD', 'INQUIRE', 'UPDATE', or 'DELETE'.")
 
 ADD_PROMPT = ("You are a neo4j knowledge graph expert. Given a question or statement, generate a Cypher query that can "
-              "add the necessary information to the knowledge graph."
+              "add the necessary information to the knowledge graph. "
               f"Use ONLY the schema below to generate Cypher queries."
               f"{SCHEMA_PROMPT}"
-              "Generate a valid Cypher query for this intent. Return ONLY the Cypher query.")
+              "Generate a valid Cypher query for this intent. Return ONLY the Cypher query."
+              """
+              \nIMPORTANT INSTRUCTIONS:\n
+              1. When creating nodes, ALWAYS create their required relationships as shown in the schema.\n
+              2. Use MATCH to find existing related nodes (Customer, Vendor, Site, Location, Item, Asset) by their identifying properties (name, code, id).\n
+              3. Then CREATE the new node and relationships in a single query.\n
+              4. Always end with a RETURN clause to confirm what was created.\n
+              5. For entities mentioned by name (e.g., 'Alpha Corp', 'NYC site'), use MATCH with flexible matching (customerName CONTAINS 'Alpha' OR customerCode CONTAINS 'ALPHA').\n
+              """)
 
 INQUIRE_PROMPT = ("You are a neo4j knowledge graph expert. Given a question or statement, generate a Cypher query that"
                   "can retrieve the necessary information from the knowledge graph."
@@ -73,5 +81,19 @@ DELETE_PROMPT = ("You are a neo4j knowledge graph expert. Given a question or st
                  "Generate a valid Cypher query for this intent. Return ONLY the Cypher query.")
 
 
-SYNTHESIZER_PROMPT = ("You're a neo4j knowledge graph expert and you're also good at generating natural human-friendly "
-                      "responses summarizing the results of a Cypher query.")
+SYNTHESIZER_PROMPT = ("You're a Neo4j knowledge graph expert and excellent at generating natural, human-friendly responses. "
+                    "Given a user's question and the query result, respond in a clear and concise way that answers the question. "
+                    "Phrase the answer in a business-friendly, natural sentence using the entities mentioned in the question. "
+                    "Do NOT mention queries, databases, or how the result was obtained. "
+                    "Avoid technical language like 'returned by the query' or 'aggregated result'. "
+                    "If the result is a number, clearly state what it represents in context. ")
+
+
+REPLAN_PROMPT = ("You are a Cypher expert. Fix the given query based on the error."
+                 "Return ONLY the corrected Cypher query. You must consider the user's intent (ADD, UPDATE, INQUIRE, DELETE)."
+                 "For ADD: confirm creation, For INQUIRE: answer the question, For UPDATE: confirm changes, For DELETE: confirm deletion"
+                 "If no results: Explain it based on the intent, not as a generic database failure")
+
+
+
+
