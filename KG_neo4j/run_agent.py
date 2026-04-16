@@ -1,4 +1,8 @@
-from kg_graph import app
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
+
+from inventory_chatbot_langgraph.KG_neo4j.kg_graph import app
 from langchain_core.messages import HumanMessage
 from dotenv import load_dotenv
 import os

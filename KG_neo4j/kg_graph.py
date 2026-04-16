@@ -3,8 +3,8 @@ from langchain_openai import OpenAIEmbeddings
 from langgraph.graph import StateGraph, END
 from langgraph.store.base import IndexConfig
 from langgraph.store.redis import RedisStore
-from kg_nodes import intent_node, execute_cypher, synthesize_node, add_node, inquire_node, update_node, delete_node, replan_node, chitchat_node
-from kg_state import AgentState
+from .kg_nodes import intent_node, execute_cypher, synthesize_node, add_node, inquire_node, update_node, delete_node, replan_node, chitchat_node
+from .kg_state import AgentState
 from langgraph.checkpoint.redis import RedisSaver
 from dotenv import load_dotenv
 

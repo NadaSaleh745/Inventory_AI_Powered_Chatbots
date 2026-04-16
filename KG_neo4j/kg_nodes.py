@@ -6,8 +6,8 @@ from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage, BaseMessage
 from neo4j import GraphDatabase
 from neo4j.time import Date, DateTime, Time, Duration
-from kg_state import AgentState
-from kg_prompts import INTENT_PROMPT, SYNTHESIZER_PROMPT, ADD_PROMPT, UPDATE_PROMPT, INQUIRE_PROMPT, DELETE_PROMPT, REPLAN_PROMPT
+from .kg_state import AgentState
+from .kg_prompts import INTENT_PROMPT, SYNTHESIZER_PROMPT, ADD_PROMPT, UPDATE_PROMPT, INQUIRE_PROMPT, DELETE_PROMPT, REPLAN_PROMPT
 from llama_index.core import Settings
 from llama_index.llms.openai import OpenAI as LlamaOpenAI
 from dotenv import load_dotenv, find_dotenv
@@ -16,7 +16,7 @@ from langgraph.store.base import BaseStore
 load_dotenv(find_dotenv())
 
 llm = ChatOpenAI(model='gpt-5-mini', temperature=0)
-Settings.llm = LlamaOpenAI(model="gpt-4o-mini", temperature=0)
+Settings.llm = LlamaOpenAI(model='gpt-5-mini', temperature=0)
 
 
 _neo4j_driver = GraphDatabase.driver(
@@ -168,6 +168,7 @@ def replan_node(state: AgentState):
 def execute_cypher(state: AgentState):
     """Executes Cypher query using _AuraGraphStore"""
     query = state.get('cypher')
+    print("CYPHER QUERY TO EXECUTE:\n", query)
 
     # If no Cypher query is provided, return error
     if not query:

@@ -10,7 +10,7 @@ class QueryRequest(BaseModel):
     thread_id: str
 
 @app_api.post("/chat")
-async def chat(req: QueryRequest):
+def chat(req: QueryRequest):
     state = {
         "question": req.message,
         "messages": [HumanMessage(content=req.message)],

@@ -7,7 +7,7 @@ from .state import AgentState
 from .prompts import SYSTEM_PROMPT, REPLAN_PROMPT, RESPONSE_PROMPT, INTENT_PROMPT, get_schema_string, CHITCHAT_PROMPT
 
 load_dotenv()
-llm = ChatOpenAI(model='gpt-5-mini', temperature=0)
+llm = ChatOpenAI(model='gpt-4o-mini', temperature=0)
 DB_PATH = '/Users/nada/PycharmProjects/AI_AGENTS DHUB_ORANGE/InventoryChatbot-main/inventory_chatbot.db'
 
 def intent_node(state: AgentState):
